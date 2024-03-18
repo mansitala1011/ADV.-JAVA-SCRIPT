@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise in JS</title>
+</head>
+
+<body>
+    <script>
+        const mypromise = new Promise((resolve, reject) => {
+            let a = 5;
+            let b = 5;
+            if (a == b) {
+                setTimeout(() => {
+                    resolve("haa");
+                }, 5000);
+            } else
+                setTimeout(() => {
+                    reject("naa")
+                }, 5000);
+        });
+        console.log(mypromise);
+
+        mypromise.then(
+            (result) => console.log(result),
+            (error) => console.log(error)
+        );
+        console.log(mypromise);
+
+        const github_Api = `https://api.github.com/users/mansitala1011`
+        const user = fetch(github_Api)
+
+        console.log(user);
+
+
+    </script>
+</body>
+
+</html>

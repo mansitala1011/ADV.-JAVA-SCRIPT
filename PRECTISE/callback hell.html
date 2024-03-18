@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback hell</title>
+</head>
+
+<body>
+    <h1>callback hell</h1>
+    <p>The callback hell in JavaScript is referred to as a situation where an excessive amount of nested callback
+        functions are being executed. It reduces code readability and maintenance.</p>
+
+    <script>
+
+        //    Callback hell => one callback inside another and another and another ......this is what callback hell is
+
+        apiproduct.addeventlistener("click", function () {
+            apiproduct.addeventlistener("click", function () {
+                apiproduct.addeventlistener("click", function () {
+                    apiproduct.addeventlistener("click", function () {
+                        apiproduct.addeventlistener("click", function () {
+                            apiproduct.addeventlistener("click", function () { });
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically apply color, background-color,position to specfic div element ,hight and width</title>
+    <style>
+        .para {
+            color: yellow;
+            background-color: black;
+            text-align: center;
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pera">
+        <h1>Hello!! I'm Mansi!!</h1>
+        <p>Currentally i'm working with frontend development course in tops technologies.</p>
+        <button id="btn">Click Here</button>
+    </div>
+    <script>
+
+        var mybtn = document.getElementById("btn");
+        mybtn.addEventListener("click",function () {
+            var maindiv = document.querySelector("div")
+            maindiv.classList.add("para")
+        });
+    </script>
+</body>
+
+</html>

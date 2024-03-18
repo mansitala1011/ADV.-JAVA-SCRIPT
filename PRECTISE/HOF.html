@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOF in JS</title>
+</head>
+
+<body>
+    <h1>HOF in JS</h1>
+    <script>
+        // Math = 3.14;
+        // let array = [2, 4, 6, 8];
+        // let areaofcurcle = function () {
+        //     let output = [];
+        //     for (let i = 0; i < array.length; i++) {
+        //         output.push = (Math.pi * (array[i] * array[i]));
+        //     }
+        //     console.log(output);
+
+        // }
+        // areaofcurcle();
+
+        // const circumfernceOfCircle = function () {
+        //     let output = [];
+        //     for (let i = 0; i < array.length; i++) {
+        //         output.push = 2 * (Math.pi * array[i]);
+        //     }
+        //     console.log();
+        // }
+        // circumfernceOfCircle();
+
+        // const diameterOfCircle = function () {
+        //     let output = [];
+        //     for (let i = 0; i < array.length; i++) {
+        //         output.push = (array[i] * array[i]);
+        //     }
+        //     console.log();
+        // }
+        // diameterOfCircle();
+
+
+        let radius = [2, 4, 6, 8];
+
+        const calculate = funcation (radius, logic) {
+            const output =[];
+
+        for (let i = 0; i < radius.length; i++) {
+
+            output.push(logic(radius[i]));
+        }
+        return output;
+        };
+
+        const area = function (radius) {
+            return Math.PI * redius * redius;
+        };
+
+        const circumfernce = function (radius) {
+            return 2 * Math.PI * radius;
+        };
+
+        const diameter = function (redius) {
+            return 2 * redius;
+        };
+
+        console.log(calculate(redius, area));
+        console.log(calculate(redius, circumfernce));
+        console.log(calculate(redius, diameter));
+
+
+
+    </script>
+</body>
+
+</html>

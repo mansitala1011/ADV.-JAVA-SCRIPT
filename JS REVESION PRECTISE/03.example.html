@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daynamic color change insquince</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .blue {
+            color: blue;
+        }
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+    <h1>THIS IS PERA</h1>
+
+   <script>
+    var pera=document.querySelectorAll("h1");
+    console.log(pera);
+
+    pera.forEach(function(element,index){
+        var classListGrp=["red","orange","blue","green"];
+        console.log(classListGrp);
+        element.classList.add(classListGrp[index%classListGrp.length]);
+    });
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark & Light Mode</title>
+</head>
+
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, illum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, illum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, illum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, illum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, illum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, illum.</p>
+    </div>
+
+    <button id="dark">Dark Mode</button>
+    <button id="light">Light Mode</button>
+
+    <script>
+        var darkmode = document.getElementById("dark");
+
+        var pera = document.getElementById("box");
+
+        let check = document.body
+
+        darkmode.addEventListener("click", function () {
+            check.style.color = "white";
+            check.style.backgroundColor="black";
+        })
+
+        light.addEventListener("click", function () {
+            check.style.color = "black";
+            check.style.backgroundColor="white";
+        })
+
+    </script>
+</body>
+
+</html>

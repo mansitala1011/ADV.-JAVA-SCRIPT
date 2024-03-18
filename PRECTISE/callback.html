@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback function</title>
+</head>
+
+<body>
+
+    <p>A JavaScript callback is a function which is to be executed after another function has finished execution. A more
+        formal definition would be - Any function that is passed as an argument to another function so that it can be
+        executed in that other function is called as a callback function.</p>
+
+    <script>
+        function callback() {
+            console.log("namaste bharat");
+        }
+
+        function hof(callback) {
+            callback();
+        }
+        hof(callback);
+
+        // synchronous programming
+
+        console.log('good morning');
+        console.log('good noon');
+        console.log('good afternoon');
+        console.log('good evening');
+        console.log('good night');
+
+        // asynchronous programming 
+
+        console.log('good morning');
+        console.log('good noon');
+        setTimeout(() => {
+            console.log("mansi");
+        }, 2000);
+        console.log('good afternoon');
+        console.log('good evening');
+        console.log('good night');
+
+    </script>
+    
+</body>
+
+</html>

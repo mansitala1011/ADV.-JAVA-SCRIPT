@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 1</title>
+    <style>
+       .myclass {
+        background-color: blue;
+        color: yellow;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>welcome to js</h1>
+    <button id="mybtn">Click</button>
+    <script>
+        var btn = document.getElementById("mybtn");
+        btn.addEventListener("click", function () {
+            var myh1 = document.querySelector("h1");
+            // myh1.style.color = "red";
+            console.log(myh1); 
+            myh1.classList.add("myclass");
+            console.log(myh1);
+        })
+
+
+    </script>
+</body>
+
+</html>

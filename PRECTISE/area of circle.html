@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOF in JS</title>
+</head>
+
+<body>
+    <h1>area of circle</h1>
+    <!-- <script>
+        const array = [2, 4, 6, 8]
+        const pi = 3.14;
+
+        function findarea(r) {
+            return (pi * r * r);
+        }
+        let r, area;
+        r = 8;
+        array.length 
+
+        area = findarea(r);
+
+        console.log("area of circle is :" + area);
+    </script> -->
+
+    <script>
+      //   function ask(question, yes, no) {
+      //     if (confirm(question)) {
+      //       yes();
+      //     } else {
+      //       no();
+      //     }
+      //   }
+      //   function yes() {
+      //     console.log("haa");
+      //   }
+      //   function no() {
+      //     console.log("naaa");
+      //   }
+
+      //   ask("Are You Sure?", yes, no);
+
+      // Question
+
+      // Area of an
+
+      let arr = [2, 4, 6, 8];
+
+      const areaOfCircle = function () {
+        let output = [];
+        for (let i = 0; i < arr.length; i++) {
+          output.push(Math.PI * (arr[i] * arr[i]));
+        }
+        console.log(output);
+      };
+      areaOfCircle();
+
+      const circumfernceOfCircle = function () {
+        let output = [];
+        for (let i = 0; i < arr.length; i++) {
+          output.push(2*(Math.PI * arr[i]));
+        }
+        console.log(output);
+      };
+      circumfernceOfCircle();
+
+      const diameterOfCircle = function () {
+        let output = [];
+        for (let i = 0; i < arr.length; i++) {
+          output.push(arr[i] * arr[i]);
+        }
+        console.log(output);
+      };
+      diameterOfCircle();
+    </script>
+  </body>
+</html>
+
+</body>
+
+</html>
